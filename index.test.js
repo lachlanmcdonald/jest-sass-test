@@ -5,7 +5,7 @@ const sass = require('sass');
 test("sass with url option", () => {
 	const result = sass.compileString('@import "partial";', {
 		style: 'compressed',
-		url: pathToFileURL(path.join(__dirname, 'test.scss')),
+		url: pathToFileURL(path.join(__dirname, 'test.scss')).toString(),
 	});
 
 	expect(result.css).toBe("body{background:red}");

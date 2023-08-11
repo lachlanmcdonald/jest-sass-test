@@ -4,7 +4,7 @@ const sass = require('sass');
 
 const result = sass.compileString('@import "partial";', {
 	style: 'compressed',
-	url: pathToFileURL(path.join(__dirname, 'test.scss')),
+	url: pathToFileURL(path.join(__dirname, 'test.scss')).toString(),
 });
 
 console.log(result.css);
