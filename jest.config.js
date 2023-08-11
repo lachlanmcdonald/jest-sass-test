@@ -1,3 +1,1 @@
-module.exports = {
-	transform: {},
-};
+module.exports = {};
